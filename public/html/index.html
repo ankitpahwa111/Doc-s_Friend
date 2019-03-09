@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script async defer src="search.js"></script>
+    <!-- <script src="map.js"></script> -->
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+    body{
+        background-image: url("download.jpg");
+        background-repeat:repeat-y;
+        background-position: left ;
+        
+        background-color:paleturquoise;
+
+    }
+    .fields{
+        margin-left: 350px;
+        font-family: fantasy;
+        font-size: 20px;
+    }
+    #Find{
+        margin-left: 600px;
+    }
+    input,select{
+        margin-left:300px;
+    }
+    #title{
+        /* font-style: italic; */
+        font-size:40px;
+        margin-left:400px;
+        font-family:cursive;
+        color:darkslategrey;
+        display:inline;
+        border: 20px;
+        border-style:double;
+        /* border-right-width:50px; */
+         
+    }
+    </style>
+</head>
+<body>
+    <br><br>
+    <div>
+    <p id="title">Book Your Appointment here</p>
+    <br><br>
+    <br><br><br>
+    <span class="fields">Name :</span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" id='name' placeholder="My Name is :">
+    </div>
+    <br><br><br><br>
+    <div>
+    <span class="fields">Age :</span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;
+    <input type="text" id='Age' placeholder="My Age is :">
+    </div>
+    <br><br><br><br>
+    <div class="fields">
+    Preferred Specialist :
+    <select id="specialism">
+            <option value="Allergist">Allergist</option>
+            <option value="Cardiologist">Cardiologist</option>
+            
+    </select>
+    </div>
+    <br><br><br><br>
+    <div>
+    <span class="fields">Overview Of disease :</span>
+    <input type="text" id='details' placeholder="             Enter the details of problem" style="height:200px;width: 300px">
+    </div>
+    <br><br><br><br>
+    <div>
+    <span class="fields">I want doctors within range of  :</span>
+    <input type="text" id='radius' placeholder="enter distance in kms" height=200px>
+    </div>
+    <br><br><br>
+    <button id='Find' class='btn btn-secondary' class="fields">Find Doctors</button>
+    <br><br><br>
+    
+</body>
+</html>

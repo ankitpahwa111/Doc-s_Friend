@@ -1,5 +1,4 @@
-//const doctors=require('../db/models').doctors;
-//console.log(doctors.find({}).toArray())
+
 
 let arr=[];
     let getDoctors=function(radiusLimit,Docspecialism,done){
